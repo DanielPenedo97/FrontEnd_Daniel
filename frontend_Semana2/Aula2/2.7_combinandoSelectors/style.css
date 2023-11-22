@@ -1,0 +1,32 @@
+h2, h5{
+    color: goldenrod;
+}
+
+.Roupas{
+    color: #0000ff;
+}
+
+li.usada{
+    color: #030370;
+}
+
+.alimentos{
+    color: aqua;
+}
+
+.caixas{
+    color: rgb(255, 51, 0)
+}
+
+.moveis{
+    color: #00ff00;
+}
+
+li{
+    color: #ff00ff;
+}
+
+.moveis>li.usada{
+    color: #ff7b00;
+}
+

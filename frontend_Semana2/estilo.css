@@ -1,0 +1,29 @@
+.header-red{
+    color: red;
+    font-size: x-small;
+    text-align:center;
+}
+.header-black{
+    color: black;
+    font-size: 24px;
+    text-align:center;
+}
+.header-green{
+    color: rgb(28, 238, 28);
+    font-size: 22px;
+    text-align: center;
+}
+/*# é pra id e . é para class*/
+#listacompras{
+    color: blue;
+}
+
+p[lang]{
+    color: yellow;
+}
+
+/*{
+    background-color: black;
+}*/
+
+h3{font-family: 'Kdam Thmor Pro', sans-serif;}

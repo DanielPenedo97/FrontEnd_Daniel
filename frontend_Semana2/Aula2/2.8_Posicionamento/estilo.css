@@ -1,0 +1,56 @@
+#caixa{
+    background-color: darkblue;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    right: 10px;
+}
+
+#caixa2{
+    background-color: blue;
+    border-radius: 70%;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    left: 10px;
+    top: 120px;
+}
+
+#caixa3{
+    background-color: red;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 240px;
+    left: 20px;
+}
+
+#caixa4{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+#caixa5{
+    border-color: black;
+    border-style: solid;
+    height: 20px;
+    width: 300px;
+    position: fixed;
+    top: 97%;
+    left: 61%;
+}
+#caixa6{
+    border-color: violet;
+    border-style: solid;
+    height: 20px;
+    width: 300px;
+    position: relative;
+    top: 250px;
+    left: 5px;
+}
+

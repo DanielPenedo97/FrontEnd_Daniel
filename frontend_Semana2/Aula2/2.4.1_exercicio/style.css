@@ -1,0 +1,18 @@
+h2{
+    /*Troque a cor de fundo de .brown para marrom*/
+    color: brown;
+}
+
+h3{
+    /*Troque o tamanho da fonte de <h3>Tamanho da Fonte</h3> para 2x o tamanho do elemento raiz*/
+    font-size: 2rem;
+}
+
+h4{
+    /*Troque a fonte weight de  <h4>Fonte weight</h4> para 800*/
+    font-weight: 800;
+}
+
+h6{
+    text-align: center;
+}
