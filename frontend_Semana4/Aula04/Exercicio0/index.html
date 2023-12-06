@@ -1,0 +1,36 @@
+<!--Exercício0
+• Crie um gerenciador permanente de tarefas no navegador;
+• Crie um formulário com o campo tarefa e um botão de adicionar tarefa;
+• Crie um elemento <ul> com o atributo id=“listaTarefas”;
+• Crie uma classe Tarefa que recebe como parâmetro do construtor, o nome da tarefa;
+• Crie uma função adicionaTarefaDOM que recebe um objeto Tarefa e adiciona em
+listaTarefas do HTML.
+• Crie uma função adicionaTarefaNoStorage que recebe um objeto Tarefa, recupera as
+tarefas do localStorage (se houver) e adiciona a nova tarefa. Considere armazenar as
+tarefas no localStorage como um array [] de objetos JSON.
+• Associe um evento ao botão de adicionar que ao ser clicado ele deve pegar o valor do
+campo tarefa, criar um objeto Tarefa, chamar a função adicionaTarefaDOM e
+adicionaTarefaNoStorage e por fim limpar o campo tarefa do formulário
+ Considere utilizar o método JSON.parse para criar um objeto JSON e
+alimentá-lo com as tarefas vindas do localStorage;
+• https://developer.mozilla.org/pt-
+BR/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
+• Considere utilizar o método JSON.stringify() para gravar as tarefas no
+localStorage;
+• https://developer.mozilla.org/en-
+US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+• Crie uma função carregaTarefasDoStorage, carrega todas as tarefas
+armazenadas no localStorage as adiciona no DOM;
+• Chame essa função no final do seu script-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercicio 0</title>
+</head>
+<body>
+    <ul id="listaTarefas">
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
