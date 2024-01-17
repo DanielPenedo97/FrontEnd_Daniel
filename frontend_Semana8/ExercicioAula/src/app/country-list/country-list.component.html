@@ -1,0 +1,15 @@
+<table>
+    <thead>
+      <tr>
+        <th>País</th>
+        <th>População</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let country of countries">
+        <td>{{ country.name.common }}</td>
+        <td>{{ country.population }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
