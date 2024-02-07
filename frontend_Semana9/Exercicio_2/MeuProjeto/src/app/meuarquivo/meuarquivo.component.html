@@ -1,0 +1,37 @@
+<form *ngIf="formulario" [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+  <!-- Se formulario não for nulo, então renderiza o formulário -->
+  <div>
+    <label for="nomeEstacao">Nome da Estação Climática:</label>
+    <input type="text" id="nomeEstacao" formControlName="nomeEstacao">
+    <div *ngIf="formulario.get('nomeEstacao')?.invalid && formulario.get('nomeEstacao')?.touched">
+      Nome da Estação climática é obrigatório.
+    </div>
+  </div>
+
+  <div>
+    <label for="email">Email de Notificação:</label>
+    <input type="email" id="email" formControlName="email">
+    <div *ngIf="formulario.get('email')?.invalid && formulario.get('email')?.touched">
+      Email de notificação é inválido.
+    </div>
+  </div>
+
+  <div>
+    <label for="localizacao">Localização:</label>
+    <input type="text" id="localizacao" formControlName="localizacao">
+    <div *ngIf="formulario.get('localizacao')?.invalid && formulario.get('localizacao')?.touched">
+      Localização é obrigatória.
+    </div>
+  </div>
+
+  <div>
+    <label for="statusInstalacao">Status de Instalação:</label>
+    <select id="statusInstalacao" formControlName="statusInstalacao">
+      <option value="nao-instalada">Não Instalada</option>
+      <option value="instalada">Instalada</option>
+      <option value="operante">Operante</option>
+    </select>
+  </div>
+
+  <button type="submit" [disabled]="formulario.invalid">Enviar</button>
+</form>

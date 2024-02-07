@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MeuarquivoModule } from './meuarquivo/meuarquivo.module'; // Importe o MeuarquivoModule
 
 @NgModule({
   declarations: [
@@ -12,7 +11,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    MeuarquivoModule // Adicione o MeuarquivoModule aos imports
   ],
   providers: [],
   bootstrap: [AppComponent]

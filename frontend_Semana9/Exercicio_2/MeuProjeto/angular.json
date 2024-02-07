@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ExercicioAula": {
+    "MeuProjeto": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/exercicio-aula",
+            "outputPath": "dist/meu-projeto",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ExercicioAula:build:production"
+              "buildTarget": "MeuProjeto:build:production"
             },
             "development": {
-              "buildTarget": "ExercicioAula:build:development"
+              "buildTarget": "MeuProjeto:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ExercicioAula:build"
+            "buildTarget": "MeuProjeto:build"
           }
         },
         "test": {
@@ -101,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a62ac1e9-f539-4dfb-ba8a-ed6d6217b8ec"
   }
 }
