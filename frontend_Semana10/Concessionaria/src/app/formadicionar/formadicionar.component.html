@@ -1,0 +1,11 @@
+<!-- formadicionar.component.html -->
+
+<form (submit)="onSubmit()">
+    <div>
+      <label for="model">Model:</label>
+      <input type="text" id="model" [(ngModel)]="model" name="model" required>
+    </div>
+    <!-- Add other form inputs for brand, year, value, color, and picture -->
+    <button type="submit">Add Item</button>
+  </form>
+  
