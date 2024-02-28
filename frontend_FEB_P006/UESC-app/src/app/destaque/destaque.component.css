@@ -1,0 +1,16 @@
+.titulo {
+    background-color: #9aafd1;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bloco {
+    padding: 10px;
+}
+
+.bloco img {
+    width: 100%;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,23 @@
+.titulo {
+    background-color: #9aafd1;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bloco {
+    padding: 10px;
+}
+
+.bloco article {
+    margin-bottom: 20px;
+}
+
+.bloco article h3 {
+    margin-bottom: 5px;
+}
+
+.bloco article a {
+    color: #3498db;
+}
