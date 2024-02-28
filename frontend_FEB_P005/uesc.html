@@ -12,6 +12,7 @@
     <header>
         <h1>Universidade</h1>
     </header>
+    
 
     <main id="conteudo">
         <aside id="menu" class="secao">
@@ -107,9 +108,23 @@
 
 
     </footer>
-
     
+    <script>
+        const DOG_API_KEY = 'live_GlHIUBUuU5kODfW7cYGb7pq7vL1sNhm6YbkzQFjr0w1msaSd7k6zHn6rFo8x21Yw';
 
+        fetch(`https://api.thedogapi.com/v1/images/search?api_key=${DOG_API_KEY}`)
+            .then(response => response.json())
+            .then(data => {
+                const dogImage = data[0].url;
+                const imgElement = document.createElement('img');
+                imgElement.src = dogImage;
+                imgElement.alt = 'Imagem de um cachorro';
+                document.body.appendChild(imgElement);
+            })
+            .catch(error => {
+                console.error('Erro ao obter imagens de cachorros:', error);
+            });
+    </script>
 </body>
 
 </html>
