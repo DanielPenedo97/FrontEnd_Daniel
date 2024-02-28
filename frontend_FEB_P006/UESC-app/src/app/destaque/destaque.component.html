@@ -1,7 +1,9 @@
+<!-- destaque.component.html -->
 <div class="titulo">
     <h2> DESTAQUE </h2>
 </div>
 <div class="bloco">
-    <img src="http://www.uesc.br/adm/xml/imagens/uescacontece.jpg" alt="">
-    <img src="https://bocanews.com.br/wp-content/uploads/2023/05/uesc-recebe-aprovacao-no-programa-erasmus.jpg" alt="">
+    <div *ngFor="let image of dogImages">
+        <img [src]="image?.url" alt="Imagem de um cachorro">
+    </div>
 </div>
